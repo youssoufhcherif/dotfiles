@@ -8,11 +8,8 @@
 "                 ╚═══╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝
 "               
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""               
-" Set the colorscheme to catpuccino
-let g:lightline = {'colorscheme': 'catppuccin_mocha'}
 let g:airline_theme = 'catppuccin_mocha'
 let g:airline_statusline_ontop=1
-set termguicolors
 set noshowmode
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
@@ -247,3 +244,8 @@ augroup END
 
 " Status bar code goes here.
 
+" Apply colorscheme AFTER plugins are loaded
+set termguicolors
+colorscheme catppuccin_mocha
+let g:lightline = {'colorscheme': 'catppuccin_mocha'}
+let g:airline_theme = 'catppuccin_mocha'
